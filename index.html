@@ -1,0 +1,113 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>IT School</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- CDN of Tailwindcss -->
+        <script src="https://cdn.tailwindcss.com"></script>
+        <!-- Configuration of tailwindcss -->
+        <script>
+            tailwind.config = {
+                theme: {
+                    screens: {
+                        sm: '480px',
+                        md: '760px',
+                        lg: '976px',
+                        xl: '1200px',
+                    }
+                }
+            }
+        </script>
+    </head>
+
+    <body>
+        <header class="bg-emerald-50">
+            <!-- Navbar -->
+            <nav class="relative container font-mono mx-auto p-6">
+                <!-- Flex container -->
+                <div class="flex items-center justify-between">
+                    <!-- Home logo -->
+                    <a href="#" class="hover:text-slate-400">Home</a>
+                    <!-- Menu items -->
+                    <div class="hidden md:flex items-center gap-6">
+                        <a href="#" class="hover:text-slate-400">Courses</a>
+                        <a href="#" class="hover:text-slate-400">Careers</a>
+                        <a href="#" class="hover:text-slate-400">Blog</a>
+                        <a href="#" class="hover:text-slate-400">Community</a>
+                        <a href="#" class="hover:text-slate-400">About Us</a>
+                    </div>
+                    <!-- Buttons -->
+                    <a href="#" class="p-3 px-6 text-white bg-cyan-500 rounded-full hover:bg-cyan-400">Get Started</a>
+                </div>
+            </nav>
+        </header>
+        <!-- Hero -->
+        <section id="hero" class="bg-emerald-50 pb-10">
+            <!-- Flex container -->
+            <div class="container flex flex-col md:flex-row items-center justify-evenly space-y-5 md:space-y-0 mx-auto py-10">
+                <!-- Left item -->
+                <div class="flex flex-col space-y-5 md:space-y-8">
+                    <h1 class="font-bold text-4xl text-center md:text-left">
+                        Learn to code!
+                    </h1>
+                    <ul class="md:list-disc list-inside leading-loose italic text-center md:text-left text-zinc-600">
+                        <li>Learn web development</li>
+                        <li>Build modern applications</li>
+                        <li>Start your IT career</li>
+                        <li>Develop your skills</li>
+                    </ul>
+                    <div class="flex justify-center md:justify-start">
+                        <a href="#" class="p-3 px-6 text-white bg-cyan-500 rounded-full hover:bg-cyan-400">Learn More</a>
+                    </div>
+                </div>
+                <!-- Right item -->
+                <div class="w-3/5 md:w-2/6">
+                    <img src="images/undraw_programmer_re_owql.svg" alt="Learn to code!"/>
+                </div>
+            </div>
+        </section>
+        <!-- Features -->
+        <section id="features" class="bg-neutral-50">
+            <h1 class="font-mono font-bold text-4xl text-center py-20">
+                What makes our platform different?
+            </h1>
+            <!-- Flex container -->
+            <div class="flex container mx-auto flex-col md:flex-row items-evenly justify-evenly pb-20 gap-14">
+                <div class="text-left w-1/4 flex flex-col space-y-4 md:space-y-6 p-6 rounded-lg border-2 border-dashed hover:border-double hover:shadow-lg">
+                    <h3 class="font-bold text-lg text-center">
+                        Modern equipment
+                    </h3>
+                    <p>
+                        We provide students with modern and comfortable individual workspaces, particulary suited for web development. Learn without leaving a comfort zone! Cofee and cookies included...
+                    </p>
+                </div>
+                <div class="text-stretch w-1/4 flex flex-col space-y-4 md:space-y-6 p-6 rounded-lg border-2 border-dashed hover:border-double hover:shadow-lg">
+                    <h3 class="font-bold text-lg text-center">
+                        Professional mentors
+                    </h3>
+                    <p>
+                        Every teacher in the academy has a solid professional background as well as great teaching skills. We use individual approach of teaching since every learner is different.
+                    </p>
+                </div>
+                <div class="text-stretch w-1/4 flex flex-col space-y-4 md:space-y-6 p-6 rounded-lg border-2 border-dashed hover:border-double hover:shadow-lg">
+                    <h3 class="font-bold text-lg text-center">
+                        Learn by practice
+                    </h3>
+                    <p>
+                        We believe that when it comes to programming, practice is everything and even more. That's why our curriculum is specifically built around learning by practice.
+                    </p>
+                </div>
+                <div class="text-stretch w-1/4 flex flex-col space-y-4 md:space-y-6 p-6 rounded-lg border-2 border-dashed hover:border-double hover:shadow-lg">
+                    <h3 class="font-bold text-lg text-center">
+                        Choose what you like
+                    </h3>
+                    <p>
+                        Choose from our scalable learning roadmaps! Buy a full career roadmap at once with a great discount or, if you need something in particular, browse our courses and pick the cherries you want!
+                    </p>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>
